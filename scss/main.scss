@@ -1,2 +1,41 @@
 @import "menu";
-@import "footer"
+@import "footer";
+
+$heightimg: 400px;
+$widthimg: 400px;
+
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fuente aplicada a todo el documento */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 15px; /* Ajusta según sea necesario */
+    padding-right: 15px; /* Ajusta según sea necesario */
+}
+
+.row {
+    margin-left: 0; /* Elimina el margen izquierdo predeterminado de la fila */
+    margin-right: 0; /* Elimina el margen derecho predeterminado de la fila */
+}
+
+.divimg {
+    height: $heightimg;
+    width: $widthimg;
+    border: 2px solid black; /* Color y grosor del borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    margin-bottom: 15px; /* Espacio entre filas */
+}

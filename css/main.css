@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
 .login-button {
   background-color: #FFC107;
   /* Amarillo brillante */
@@ -58,10 +62,14 @@
   width: 80px;
   height: 80px; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 footer {
   background-color: #333333;
   /* Gris oscuro */
-  margin-top: 10px; }
+  margin-top: auto; }
 
 .footerContainer {
   width: 100%;
@@ -147,3 +155,54 @@ footer {
   .socialIcons a {
     padding: 8px;
     margin: 4px; } }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+
+/* Hacer que el contenedor principal ocupe el espacio restante */
+.container-fluid {
+  flex: 1; }
+
+/* Si el footer tiene margen superior, elimínalo */
+footer {
+  margin-top: auto; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* Fuente aplicada a todo el documento */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; }
+
+.img {
+  height: 100%;
+  width: 100%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  padding-left: 15px;
+  /* Ajusta según sea necesario */
+  padding-right: 15px;
+  /* Ajusta según sea necesario */ }
+
+.row {
+  margin-left: 0;
+  /* Elimina el margen izquierdo predeterminado de la fila */
+  margin-right: 0;
+  /* Elimina el margen derecho predeterminado de la fila */ }
+
+.divimg {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  /* Color y grosor del borde */
+  border-radius: 5px;
+  /* Esquinas redondeadas */
+  margin-bottom: 15px;
+  /* Espacio entre filas */ }
