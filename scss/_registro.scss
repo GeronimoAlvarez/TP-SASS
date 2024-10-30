@@ -1,0 +1,78 @@
+/* Reset y configuraciones básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#body2 {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #FFEB3B, #FFFFFF, #212121); /* Gradiente amarillo, blanco, negro */
+}
+
+/* Enlace de bienvenida */
+#color {
+    text-decoration: none;
+    color: #212121; /* Negro para el enlace */
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    background: linear-gradient(to bottom right, #FFFFFF, #E0E0E0); /* Blanco y gris claro */
+    padding: 45px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    transition: transform 2s;
+}
+
+form:hover {
+    transform: scale(1.1);
+}
+
+form h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+    color: #212121; /* Negro para el encabezado */
+}
+
+input {
+    background-color: #F5F5F5; /* Fondo blanco/gris claro para entradas */
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 25px;
+    color: #212121; /* Texto negro en entradas */
+    outline: none;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #FFC107; /* Amarillo para el botón */
+    color: #212121; /* Texto negro en el botón */
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #FFD54F; /* Amarillo más claro al hacer hover */
+}
+
+/* Media Queries */
+@media(max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    form {
+        width: 340px;
+    }
+}
