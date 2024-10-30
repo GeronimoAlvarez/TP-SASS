@@ -183,7 +183,8 @@ footer {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom right, #FFEB3B, #FFFFFF, #212121);
-  /* Gradiente amarillo, blanco, negro */ }
+  /* Gradiente amarillo, blanco, negro */
+  animation: fade-up 0.5s; }
 
 /* Enlace de bienvenida */
 #color {
@@ -245,12 +246,13 @@ input {
   form {
     width: 340px; } }
 
-body {
+#body1 {
   font-family: 'Open Sans', sans-serif;
   /* Fuente aplicada a todo el documento */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  animation: fade-down 0.5s; }
 
 .img {
   width: 100%;
@@ -290,3 +292,22 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
   /* Agrega sombra */
   border-radius: 5px; }
+
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0, 9); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1); } }
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0, 9); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1); } }
+
+h1 {
+  animation: fade-down 0.5s; }

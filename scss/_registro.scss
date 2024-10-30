@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(to bottom right, #FFEB3B, #FFFFFF, #212121); /* Gradiente amarillo, blanco, negro */
+    animation: fade-up 0.5s;
 }
 
 /* Enlace de bienvenida */
